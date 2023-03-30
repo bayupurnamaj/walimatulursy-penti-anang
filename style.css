@@ -1,0 +1,548 @@
+:root {
+  --satu: #5a5a27;
+  --dua: #7d7d3b;
+  --tiga: #b187aa;
+  --empat: #3e343a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--satu);
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(img/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tiga);
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  left: 10%;
+  border-radius: 0.5em;
+  z-index: 9999;
+  padding: 1rem 0;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 4rem;
+  margin: 0 8rem;
+  transition: 0.4s;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--empat);
+}
+
+/* Hero Melayang */
+.popup {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(img/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s linear;
+}
+.popup.off {
+  transform: scaleX(0);
+  top: -150%;
+}
+.isi {
+  display: none;
+}
+
+.popup .row {
+  padding: 5rem 10%;
+  display: flex;
+  justify-content: center;
+}
+.popup .row .card,
+.undang .row .card {
+  text-align: center;
+}
+.popup .row .card img {
+  margin: 2rem;
+  width: 100%;
+}
+.popup .row .card h1,
+.comment .comment-section .form-control {
+  margin-bottom: 2rem;
+}
+.popup .row .card h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.popup .row .card a,
+.tgl .btn a,
+.rekening .btn button {
+  color: #fff;
+  font-size: 1.3rem;
+  background-color: var(--tiga);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s linear;
+}
+.popup .row .card a:hover,
+.tgl .btn a:hover,
+.rekening .btn button:hover {
+  background-color: var(--empat);
+}
+
+/* Hero Section */
+.home {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url(img/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: top;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+.row,
+.tgl .btn,
+.rekening .btn,
+.undang .undangan {
+  padding: 5rem 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row .card,
+.judul h1,
+.undang .undangan .card,
+.comment .comment-section h1,
+.penutup .card p,
+.penutup .card h1 {
+  text-align: center;
+}
+.home .row .card img {
+  margin: 3rem;
+  width: 45%;
+}
+.home .row .card h1,
+.popup .row .card h1,
+.judul h1,
+.comment .comment-section h1 {
+  font-family: "Clicker Script";
+  font-size: 5rem;
+}
+.home .row .card h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.card p,
+.story .timeline .container .content p,
+.comment .comment-section label {
+  font-size: 1.8rem;
+}
+
+.home .controls {
+  position: fixed;
+  bottom: 20%;
+  right: 11%;
+  z-index: 9999;
+}
+.home .controls .play {
+  display: none;
+}
+.home .controls .pause i,
+.home .controls .play i {
+  font-size: 2rem;
+  color: #fff;
+  background-color: var(--tiga);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.home .controls .pause i {
+  padding: 1rem 1.3rem;
+}
+.home .controls .play i {
+  padding: 1rem 1.2rem;
+}
+.home .controls .play i:hover,
+.home .controls .pause i:hover {
+  color: var(--tiga);
+  background-color: var(--empat);
+}
+/* Undangan */
+.undang,
+.tgl,
+.story,
+.comment,
+footer,
+.penutup,
+.rekening {
+  width: 80%;
+  margin: auto;
+}
+.undang .row .card img {
+  margin-bottom: 2rem;
+  width: 30%;
+}
+
+.card h1 {
+  font-family: "clicker Script";
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+.undang .undangan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.undang .undangan .card .card-img {
+  margin-bottom: 2rem;
+  width: 70%;
+}
+.undang .undangan .card .card-img1 {
+  margin-bottom: 2rem;
+  width: 60%;
+}
+.undang .undangan .tambah p {
+  font-size: 5rem;
+  font-family: "Clicker Script";
+  padding: 5rem;
+}
+/* Tanggal Undangan */
+.judul h1 {
+  padding-top: 5rem;
+  margin-bottom: -3rem;
+}
+.tgl .row .card,
+.rekening .row .card {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 45rem;
+  margin: 4rem auto;
+}
+.tgl .row .card p,
+.rekening .row .card p {
+  margin-bottom: 2rem;
+}
+.tgl .btn {
+  margin-top: -10rem;
+}
+i {
+  margin-right: 1rem;
+}
+.rekening .judul p {
+  font-size: 1.8rem;
+  width: 80%;
+  margin: 5rem auto 0;
+  text-align: center;
+}
+.rekening .row .card img {
+  width: 60%;
+  padding: 5rem 0;
+}
+.rekening .btn button {
+  cursor: pointer;
+}
+.rekening .row .card input {
+  font-size: 2rem;
+  color: inherit;
+  text-align: center;
+  font-weight: 600;
+}
+/* Love Story */
+.story .timeline {
+  padding: 10rem 10%;
+  position: relative;
+}
+.story .timeline .container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+.story .timeline .container::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  right: -1rem;
+  background-color: var(--empat);
+  box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3);
+  top: 1rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+.story .timeline .left {
+  left: 0;
+}
+.story .timeline .right {
+  left: 50%;
+}
+.story .timeline .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.5rem;
+  width: 0;
+  z-index: 1;
+  right: 1.9rem;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--empat);
+}
+.story .timeline .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.5rem;
+  width: 0;
+  z-index: 1;
+  left: 1.9rem;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--empat) transparent transparent;
+}
+.story .timeline .right::after {
+  left: -1rem;
+}
+.story .timeline .content {
+  color: #fff;
+  padding: 1.2rem 1.7rem;
+  background-color: var(--tiga);
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
+  position: relative;
+  border-radius: 6px;
+}
+.story .timeline .container .content h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.penutup {
+  background-image: url(img/img6.jpg);
+  height: 200px;
+  background-position: bottom;
+  padding-top: 3rem;
+}
+.penutup .card {
+  width: 60%;
+  margin: auto;
+}
+.penutup .card p {
+  margin-bottom: 6rem;
+}
+.penutup .row .card img {
+  justify-content: center;
+  position: relative;
+  width: 40%;
+}
+footer {
+  background-color: var(--empat);
+  text-align: center;
+  height: 200px;
+}
+
+.footer-content {
+  padding: 3rem 1.2rem;
+}
+
+.footer-content p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.footer-content a:hover {
+  color: var(--tiga);
+}
+.footer-content i {
+  margin: 0 0.2rem 0 0.5rem;
+  color: red;
+}
+footer .footer-content span {
+  margin-right: 0.8rem;
+}
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+  .story .timeline .left::before {
+    right: 2.5rem;
+  }
+  .story .timeline .right::before {
+    left: 2.5rem;
+  }
+}
+/* Tablet */
+
+@media (max-width: 1024px) {
+  .navbar .navbar-nav a {
+    font-size: 2.5rem;
+    margin: 0 5rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .navbar {
+    right: 0;
+    left: 0;
+  }
+
+  .navbar .navbar-nav a {
+    font-size: 2.5rem;
+    margin: 0 5rem;
+  }
+  .home,
+  .undang,
+  .tgl,
+  .story,
+  .comment,
+  .penutup,
+  .rekening {
+    width: 100%;
+  }
+  .home .row {
+    padding-top: 14rem;
+  }
+  .home .row .card h1,
+  .undang .row .card h1,
+  .undang .undangan .card h1,
+  .penutup .card h1 {
+    font-size: 2.8rem;
+  }
+  .popup .row .card h1 {
+    font-size: 4rem;
+  }
+  .popup .row .card h2,
+  .home .row .card h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .popup .row {
+    padding: 7rem 10%;
+  }
+  .popup .row .card img {
+    width: 100%;
+    margin: 3rem auto;
+  }
+  .popup .row .card h1 {
+    margin-bottom: 3rem;
+  }
+
+  .home .row .card img {
+    width: 65%;
+  }
+  .undang .row .card img,
+  .undang .undangan .card img {
+    width: 50%;
+  }
+  .undang .undangan .tambah p {
+    padding: 3rem 5rem 2.5rem;
+  }
+  .undang .row .card {
+    margin: -2rem;
+  }
+  /* Love Story */
+  .story .timeline::after {
+    left: 20rem;
+  }
+  .story .timeline .container {
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 1.3rem;
+  }
+  .story .timeline .container::before {
+    left: 4rem;
+    border: medium solid var(--empat);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--empat) transparent transparent;
+  }
+  .story .timeline .left::after,
+  .story .timeline .right::after {
+    left: 1rem;
+  }
+  .story .timeline .right {
+    left: 0%;
+  }
+  .story .timeline .container .content h2 {
+    font-weight: 700;
+  }
+  .home .controls {
+    bottom: 15%;
+  }
+  .penutup {
+    padding-top: 2rem;
+  }
+  .penutup .row .card img {
+    width: 80%;
+  }
+  .pause .card p {
+    margin-bottom: 1rem;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+/* Mobilephone */
+@media (max-width: 375px) {
+  html {
+    font-size: 70%;
+  }
+  .navbar .navbar-nav a {
+    margin: 0 1.5rem;
+    font-size: 2rem;
+  }
+
+  .popup .row {
+    padding: 10rem 10%;
+  }
+  .popup .row .card img {
+    width: 65%;
+    margin: 5rem auto;
+  }
+  .popup .row .card h1 {
+    margin-bottom: 5rem;
+  }
+  .penutup .card p {
+    margin-bottom: 3rem;
+  }
+  .penutup .card h1 {
+    font-size: 2rem;
+  }
+  .penutup {
+    padding-top: 1rem;
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walimatul Ursy Penti & Anang</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="comment.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/004d60d0e7.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="body" id="body">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-nav">
+        <a target="_self" href="#home"><i class="fa-solid fa-heart"></i></a>
+        <a target="_self" href="#undang"><i class="fa-solid fa-venus-mars"></i></a>
+        <a target="_self" href="#tgl"><i class="fa-solid fa-calendar-days"></i></a>
+        <a target="_self" href="#comment"><i class="fa-solid fa-comment"></i></a>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+    <!-- Hero Melayang -->
+    <div class="popup" id="popup">
+      <audio id="myAudio" controls hidden>
+        <source src="audio/mahersph.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="row">
+        <div class="card">
+          <h2 class="card-title">UNDANGAN PERNIKAHAN</h2>
+          <img src="img/cover.png" alt="Penti & Anang" class="Card-img" />
+          <h1 class="card-name">Penti & Anang</h1>
+          <a href="#" onclick="enableAutoplay()" type="button" id="buka" class="buka"><i class="fa-solid fa-envelope-open"></i> Buka Undangan</a>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Hero Melayang -->
+    <div class="isi">
+      <!-- Hero -->
+      <section class="home" id="home">
+        <div class="row">
+          <div class="card">
+            <h2 class="card-title">UNDANGAN PERNIKAHAN</h2>
+            <img src="img/cover.png" alt="Penti & Anang" class="Card-img" />
+            <h1 class="card-name">Penti & Anang</h1>
+            <p class="card-text">Kami berharap Anda menjadi bagian dari hari istimewa kami</p>
+          </div>
+          <div class="controls">
+            <div class="play"><i class="fa-solid fa-play"></i></div>
+            <div class="pause"><i class="fa-solid fa-pause"></i></div>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Hero -->
+      <!-- Undangan -->
+      <section class="undang" id="undang">
+        <div class="row">
+          <div class="card">
+            <img src="img/img2.png" alt="bismillah" class="Card-img" />
+            <h1 class="card-title">Assalamu'alaikum Wr. Wb.</h1>
+            <p class="card-text">
+              Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:
+            </p>
+          </div>
+        </div>
+        <div class="undangan">
+          <div class="card">
+            <img src="img/img4.png" alt="Penti & Anang" class="card-img" />
+            <h1 class="card-name">Penti Triani Putri S.Si</h1>
+            <p class="card-text">Putri ketiga dari Bapak Amandani & Ibu Leli Yuliasmi</p>
+          </div>
+          <div class="tambah">
+            <p>&</p>
+          </div>
+          <div class="card">
+            <img src="img/img5.png" alt="Penti & Anang" class="card-img1" />
+            <h1 class="card-name">Kunci Anang S.pd</h1>
+            <p class="card-text">Putra kelima dari Bapak Basirun (almarhum) & Ibu Rusdiana</p>
+          </div>
+        </div>
+      </section>
+      <!-- Akhir Undangan -->
+      <section class="tgl" id="tgl">
+        <div class="judul">
+          <h1>Save The Date</h1>
+        </div>
+        <div class="row">
+          <div class="card">
+            <h1 class="card-title">Akad Nikah</h1>
+            <p><strong>Kamis, 27 April 2023</strong><br />Pukul 08.00 WIB s/d Selesai</p>
+            <p class="card-text">
+              Alamat : Kediaman Mempelai Wanita, Jl. Guru Masalan No. 138 Dusun 3 Kp. Desabaru, Ds. Menangraya, Kec. Pedamaran, Kab. Kayuagung, Sumatra Selatan
+            </p>
+          </div>
+          <div class="card">
+            <h1 class="card-title">Resepsi</h1>
+            <p><strong>Kamis, 27 April 2023</strong><br />Pukul 10.00 WIB s/d Selesai</p>
+            <p class="card-text">
+              Alamat : Kediaman Mempelai Wanita, Jl. Guru Masalan No. 138 Dusun 3 Kp. Desabaru, Ds. Menangraya, Kec. Pedamaran, Kab. Kayuagung, Sumatra Selatan
+            </p>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="https://maps.app.goo.gl/7vd12SDRCcub6iQ59" target="_blank" class="map" id="map"><i class="fa-solid fa-location-dot"></i> Lihat Lokasi</a>
+        </div>
+      </section>
+      <section class="story" id="story">
+        <div class="judul">
+          <h1>Our Love Strory</h1>
+        </div>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>Feb 2021</h2>
+              <p>Awal bertemu</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>Sep 2022</h2>
+              <p>Ta'aruf</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>Des 2022</h2>
+              <p>Khitbah</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>April 2023</h2>
+              <p>Nikah</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comment" id="comment">
+        <div class="comment-section">
+          <h1>Leave a Comment</h1>
+          <form name="comment-form" method="post">
+            <div class="form-group">
+              <label for="name">Nama:</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="comment">Komentar:</label>
+              <textarea class="form-control" id="comment" name="comment" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="confirmed">Konfirmasi Kehadiran:</label>
+              <select name="confirmed" id="confirmed" class="form-control">
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+          <h2>Komentar:</h2>
+          <div id="comments-list"></div>
+        </div>
+      </section>
+      <section class="rekening" id="rekening">
+        <div class="judul">
+          <h1>Wedding Gift</h1>
+          <p class="card-text">
+            Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat mengirimkan hadiah via digital/transfer pada rekening dibawah ini :
+          </p>
+        </div>
+        <div class="row">
+          <div class="card">
+            <img src="img/rek.png" alt="" />
+            <input type="text" id="myInput" value="7152330515" />
+            <p class="card-text">Penti Triani Putri</p>
+            <div class="btn">
+              <button class="copy-btn" id="copy-btn"><i class="fa-solid fa-copy"></i> Salin no. Rekening</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="penutup" id="penutup">
+        <div class="row">
+          <div class="card">/ <img src="img/cover.png" alt="Penti & Anang" class="Card-img" /></div>
+        </div>
+        <div class="card">
+          <p class="card-text">
+            Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu. Atas kehadiran dan doa
+            restunya, kami mengucapkan terima kasih.
+          </p>
+          <h1 class="card-title">Wassalamu'alaikum Wr. Wb.</h1>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-content">
+          <p>
+            <span>&copy; 2023 Invitatin4U</span
+            ><span>Made with<i class="fa-solid fa-heart"></i> by <a href="https://wa.me/+6282328776034"> Bayu Purnama Jatnika</a></span>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- My Javascript -->
+    <script src="script.js"></script>
+    <script src="comment.js"></script>
+  </body>
+</html>
