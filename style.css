@@ -517,7 +517,7 @@ footer .footer-content span {
 }
 
 /* Mobilephone */
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html {
     font-size: 70%;
   }
